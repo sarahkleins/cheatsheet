@@ -19,10 +19,10 @@
 * `scripts.build`
 
 # Javascript
-* From mdn: A common mistake for new JavaScript programmers is to extract a method from an object, then to later call that function and expect it to use the original object as its this (e.g. by using that method in callback-based code). Without special care however, the original object is usually lost. Creating a bound function from the function, using the original object, neatly solves this problem (otherwise it thinks 'this' is the element) :
-
+* From mdn: A common mistake for new JavaScript programmers is to extract a method from an object, then to later call that function and expect it to use the original object as its this (e.g. by using that method in callback-based code). Without special care however, the original object is usually lost. Creating a bound function from the function, using the original object, neatly solves this problem (otherwise it thinks 'this' is the element):
 * `element.addEventListener('click', obj.function.bind(obj))` || `buton.addEventListener('click', state.forward.bind(state))`;
 
+* `elem.classList.toggle(className)`
 
 # jQuery
 
@@ -32,4 +32,3 @@
 * Worked transforming large coordinates to long/lat (180/90)
 * `ogr2ogr -t_srs EPSG:4326 -f geoJSON -lco COORDINATE_PRECISION=7 new_geojson_file.geojson shapefile.shp`
 * [ogr2ogr docs] (http://www.gdal.org/ogr2ogr.html)
-
