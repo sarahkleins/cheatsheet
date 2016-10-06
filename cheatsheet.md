@@ -57,6 +57,28 @@ git commit
 git push
 ```
 
+* Rebase - 
+```
+git fetch upstream
+git merge upstream/master
+git push (for fork)
+```
+
+* Commit changes - 
+```
+git st
+git diff [name-of-file]
+git add [name-of-file]
+git commit -m"message"
+git push
+```
+
+* Add upstream - 
+```
+git remote add upstream git@github.com:capterra/vendor-portal-next.git (ORIGINAL - where to fetch from)
+git remote add origin git@github.com:sarahkleins/vendor-portal-next.git (FORK!)
+```
+
 # npm
 * `npm init` to instantiate `package.json` file.
 * `npm install <package> --save-dev` to add package to `devDependencies`
