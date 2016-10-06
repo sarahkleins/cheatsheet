@@ -37,6 +37,26 @@ git pull [remote] [branch-name]
 ex. git pull venka tes-35-paginated-review
 ```
 
+* Merge conflicts - 
+```
+git fetch upstream
+git merge upstream/master --> or whatever branch you need to pull from i.e. upstream/refactorings
+git st
+Everything in GREEN in merged fine
+Everything in RED needs to be resolved
+
+<<<<<< HEAD is my code
+
+============
+
+<<<<<<< upstream/master is from upstream
+
+git add file-name-where-changes-happend
+git st
+git commit
+git push
+```
+
 # npm
 * `npm init` to instantiate `package.json` file.
 * `npm install <package> --save-dev` to add package to `devDependencies`
@@ -75,6 +95,7 @@ $('.df-toggle-trigger').click(function(){
   $icon.toggleClass('ss-navigatedown', hasUpArrow).toggleClass('ss-navigateup');
   $list.slideToggle(400);
 });
+
 /*
 On click, If the parameter's value is false (the icon does not have ss-navigateup). 
 'ss-navigatedown' is removed. 'ss-navigateup' is then added/removed appropriately. 
