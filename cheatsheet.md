@@ -23,6 +23,11 @@ git remote add [name-of-remote] git@github.com:[github-user]/[github-repo].git
 ex. git remote add karina git@github.com:karinaiparra/capmain-next.git
 ```
 
+* Remove a remote - 
+```
+git remote rm karina (--> remote name)
+```
+
 * Add branch from another remote -
 ```
 git co [name-of-remote]/[branch-name]
@@ -79,6 +84,13 @@ git remote add upstream git@github.com:capterra/vendor-portal-next.git (ORIGINAL
 git remote add origin git@github.com:sarahkleins/vendor-portal-next.git (FORK!)
 ```
 
+* To note - 
+```
+git push --set-upstream origin master
+git push -u origin master 
+are the same thing
+```
+
 # npm
 * `npm init` to instantiate `package.json` file.
 * `npm install <package> --save-dev` to add package to `devDependencies`
@@ -125,6 +137,12 @@ This all depends on the starting state, which is why it can seem confusing.
 On click, If the parameter's value is false (the icon does not have ss-navigateup), 
 'ss-navigatedown' is removed. 'ss-navigateup' is then toggled (added).
 */
+```
+
+# CSS
+* Media queries - see work_projects
+```CSS
+@media (min-width: 700px) { ... }
 ```
 
 # Ruby
