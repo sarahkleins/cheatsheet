@@ -11,6 +11,31 @@ git merge origin/main-143-reviews-form
 ```
 git branch -D [name-of-branch]
 ```
+* Checkout new branch - 
+```
+git co -b new-branch-name
+```
+
+* Add remote - 
+```
+git remote -v
+git remote add [name-of-remote] git@github.com:[github-user]/[github-repo].git
+ex. git remote add karina git@github.com:karinaiparra/capmain-next.git
+```
+
+* Add branch from another remote -
+```
+git co [name-of-remote]/[branch-name]
+ex. git co karina/review-form
+
+*follow instructions in msg*
+```
+
+* Pull from remote - 
+```
+git pull [remote] [branch-name]
+ex. git pull venka tes-35-paginated-review
+```
 
 # npm
 * `npm init` to instantiate `package.json` file.
@@ -35,6 +60,11 @@ git branch -D [name-of-branch]
 * `elem.classList.toggle(className)`
 
 # jQuery
+* toggleClass
+```javascript
+_this.toggleClass('ba-flag-true', _this.text() == 'On'); //toggle class, if this is true
+_this.toggleClass('ba-flag-true', _this.text() == 'Off'); //toggle class, if this is true
+```
 
 # Ruby
 * Update ruby verision - 
