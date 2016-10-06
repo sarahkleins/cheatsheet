@@ -66,6 +66,24 @@ _this.toggleClass('ba-flag-true', _this.text() == 'On'); //toggle class, if this
 _this.toggleClass('ba-flag-true', _this.text() == 'Off'); //toggle class, if this is true
 ```
 
+```javascript
+$('.df-toggle-trigger').click(function(){
+  var $icon = $(this).find('i'),
+      $list = $(this).parents('.dropdown-toggle-container').find('.check-list'),
+      hasUpArrow = $icon.hasClass('ss-navigateup');
+
+  $icon.toggleClass('ss-navigatedown', hasUpArrow).toggleClass('ss-navigateup');
+  $list.slideToggle(400);
+});
+/*
+On click, If the parameter's value is false (the icon does not have ss-navigateup). 
+'ss-navigatedown' is removed. 'ss-navigateup' is then added/removed appropriately. 
+This all depends on the starting state, which is why it can seem confusing. 
+On click, If the parameter's value is false (the icon does not have ss-navigateup), 
+'ss-navigatedown' is removed. 'ss-navigateup' is then toggled (added).
+*/
+```
+
 # Ruby
 * Update ruby verision - 
 ```
