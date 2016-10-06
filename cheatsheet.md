@@ -1,6 +1,16 @@
 # cheatsheet
 
 # Git
+* Merge in changes - 
+```
+cd to branch
+git fetch origin
+git merge origin/main-143-reviews-form
+```
+* Delete local branch - 
+```
+git branch -D [name-of-branch]
+```
 
 # npm
 * `npm init` to instantiate `package.json` file.
@@ -25,6 +35,24 @@
 * `elem.classList.toggle(className)`
 
 # jQuery
+
+# Ruby
+* Update ruby verision - 
+```
+rbenv: version `2.3.1' is not installed
+rbenv install 2.3.1
+ruby -v
+ruby 2.3.1
+gem install bundler
+bundle install
+```
+
+# Terminal
+* Access local server - `ifconfig`
+* Go to the beginning - `ctr a`
+* Go the end - `ctr e`
+* Delete backward - `ctr u`
+* Delete forward - `ctr k`
 
 # Mapbox
 * Brew install gdal - ofr2ogr `brew install gdal`
