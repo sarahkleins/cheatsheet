@@ -144,6 +144,27 @@ On click, If the parameter's value is false (the icon does not have ss-navigateu
 ```CSS
 @media (min-width: 700px) { ... }
 ```
+```CSS
+@mixin clearfix {
+  &::before,
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+```
+
+* Positioning - 
+```CSS
+position: relative; /* element is positioned (top, right, bottom, left) relative to 
+it's normal position (as a static element). */
+```
+```CSS
+position: absolute; /* element is positioned (top, right, bottom, left) relative to 
+it's first positioned (not `static`; `position: relative`) parent. */
+```
+
 
 # Ruby
 * Update ruby verision - 
