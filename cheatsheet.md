@@ -196,3 +196,7 @@ New versions of Node and NPM come out frequently. You can use Homebrew to update
 
 Make sure Homebrew has the latest version of the Node package. In Terminal type `brew update`
 Upgrade Node: `brew upgrade node`
+
+# ESLint
+* npm test to run
+* npm run fix to run fixes
