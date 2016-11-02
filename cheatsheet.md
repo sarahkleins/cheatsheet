@@ -198,5 +198,5 @@ Make sure Homebrew has the latest version of the Node package. In Terminal type 
 Upgrade Node: `brew upgrade node`
 
 # ESLint
-* npm test to run
-* npm run fix to run fixes
+* `npm test` to run
+* `npm run fix` to run fixes
