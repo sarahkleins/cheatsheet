@@ -96,6 +96,7 @@ are the same thing
 * `npm install <package> --save-dev` to add package to `devDependencies`
 * `--save-dev` to save the package for development purposes. Example: unit tests, minification.
 * `--save` to save the package required for the application to run.
+* `npm run build` to use browserify/uglify -- bundle.js
 
 # browserify
 * Browserify makes it possible to `require` packages in the browser.
