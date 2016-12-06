@@ -114,6 +114,9 @@ are the same thing
 
 * `elem.classList.toggle(className)`
 
+* Instance
+* `attrControl` is an instance of `AttributionControl`...
+
 # jQuery
 * toggleClass
 ```javascript
