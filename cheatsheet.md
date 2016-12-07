@@ -117,6 +117,8 @@ are the same thing
 * Instance
 * `attrControl` is an instance of `AttributionControl`...
 
+* Works for device width check - `document.documentElement.clientWidth < 768 ? 'top-left' : 'bottom-right'`
+
 # jQuery
 * toggleClass
 ```javascript
