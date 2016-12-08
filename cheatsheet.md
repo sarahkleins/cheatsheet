@@ -197,6 +197,13 @@ bundle install
 * `ogr2ogr -t_srs EPSG:4326 -f geoJSON -lco COORDINATE_PRECISION=7 new_geojson_file.geojson shapefile.shp`
 * [ogr2ogr docs] (http://www.gdal.org/ogr2ogr.html)
 
+# Mapbox libraries
+* [Turf.js](http://turfjs.org/) - geospatial (location data) analysis
+* [Three.js](https://threejs.org/) - 3D library, WebGL
+* [Chroma.js](http://gka.github.io/chroma.js/) - Color manipulation
+* [d3.js](https://d3js.org/) - Manipulating documents based on data
+* [arc.js](https://github.com/springmeyer/arc.js/blob/gh-pages/README.md) - Create arcs from lines
+
 # Update node
 New versions of Node and NPM come out frequently. You can use Homebrew to update the software it installs.
 
