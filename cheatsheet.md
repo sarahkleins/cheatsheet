@@ -203,6 +203,7 @@ bundle install
 * [Chroma.js](http://gka.github.io/chroma.js/) - Color manipulation
 * [d3.js](https://d3js.org/) - Manipulating documents based on data
 * [arc.js](https://github.com/springmeyer/arc.js/blob/gh-pages/README.md) - Create arcs from lines
+* [rbush.js](https://github.com/mourner/rbush) - 2D spatial indexing
 
 # Update node
 New versions of Node and NPM come out frequently. You can use Homebrew to update the software it installs.
