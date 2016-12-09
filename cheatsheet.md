@@ -121,7 +121,7 @@ are the same thing
 
 ```javascript
 window.addEventListener('keydown', function(e) {
-  const audio = document.querySelectorAll(`audio[data-key="${e.keyCode}"`]')
+  const audio = document.querySelectorAll(`audio[data-key="${e.keyCode}"`])
   if (!audio) return;
   key.classList.add('playing');
 }
