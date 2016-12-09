@@ -119,6 +119,27 @@ are the same thing
 
 * Works for device width check - `document.documentElement.clientWidth < 768 ? 'top-left' : 'bottom-right'`
 
+```javascript
+window.addEventListener('keydown', function(e) {
+  const audio = document.querySelectorAll(`audio[data-key="${e.keyCode}"`]')
+  if (!audio) return;
+  key.classList.add('playing');
+}
+```
+
+```javascript
+function removeTransition(){
+  // function goes here
+}
+
+const keys = document.querySelectorAll('.key');
+keys.forEach(key => key.addEventListener('transitionend', removeTransition))
+```
+
+# ES6
+`const` - constant
+`${evaluate}` - ES6 template strings
+
 # jQuery
 * toggleClass
 ```javascript
