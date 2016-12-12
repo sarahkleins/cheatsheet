@@ -217,7 +217,7 @@ bundle install
 * Worked transforming large coordinates to long/lat (180/90)
 * `ogr2ogr -t_srs EPSG:4326 -f geoJSON -lco COORDINATE_PRECISION=7 new_geojson_file.geojson shapefile.shp`
 * [ogr2ogr docs] (http://www.gdal.org/ogr2ogr.html)
-* `csv2geojson --lat latitude --lon longitude filename.csv | tippecanoe -o yext.mbtiles -z 4` - large CSV tile to vector tile set (upload to Studio)
+*  CSV to Map Points: `csv2geojson --lat latitude --lon longitude yext_points.csv | tippecanoe -o yext_v5.mbtiles -B3` ...large CSV tile to vector tile set (upload to Studio)
 
 # Mapbox libraries
 * [Turf.js](http://turfjs.org/) - geospatial (location data) analysis
@@ -226,6 +226,7 @@ bundle install
 * [d3.js](https://d3js.org/) - Manipulating documents based on data
 * [arc.js](https://github.com/springmeyer/arc.js/blob/gh-pages/README.md) - Create arcs from lines
 * [rbush.js](https://github.com/mourner/rbush) - 2D spatial indexing
+* [Tippecanoe.js](https://github.com/mapbox/tippecanoe) - Builds vector tilesets from large collections of GeoJSON
 
 # Update node
 New versions of Node and NPM come out frequently. You can use Homebrew to update the software it installs.
