@@ -217,6 +217,7 @@ bundle install
 * Worked transforming large coordinates to long/lat (180/90)
 * `ogr2ogr -t_srs EPSG:4326 -f geoJSON -lco COORDINATE_PRECISION=7 new_geojson_file.geojson shapefile.shp`
 * [ogr2ogr docs] (http://www.gdal.org/ogr2ogr.html)
+* `csv2geojson --lat latitude --lon longitude filename.csv | tippecanoe -o yext.mbtiles -z 4` - large CSV tile to vector tile set (upload to Studio)
 
 # Mapbox libraries
 * [Turf.js](http://turfjs.org/) - geospatial (location data) analysis
