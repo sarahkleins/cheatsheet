@@ -192,7 +192,6 @@ position: absolute; /* element is positioned (top, right, bottom, left) relative
 it's first positioned (not `static`; `position: relative`) parent. */
 ```
 
-
 # Ruby
 * Update ruby verision - 
 ```
@@ -218,6 +217,20 @@ bundle install
 * `ogr2ogr -t_srs EPSG:4326 -f geoJSON -lco COORDINATE_PRECISION=7 new_geojson_file.geojson shapefile.shp`
 * [ogr2ogr docs] (http://www.gdal.org/ogr2ogr.html)
 *  CSV to Map Points: `csv2geojson --lat latitude --lon longitude yext_points.csv | tippecanoe -o yext_v5.mbtiles -B3` ...large CSV tile to vector tile set (upload to Studio)
+
+```javascript
+map.addSource('metro-lines', {
+  type: 'geojson', 
+  data: '../data/features_connector_test.geojson'
+});
+```
+
+```javascript
+map.addSource('metro-stations', {
+  type: 'vector', 
+  url: 'mapbox://sarahkleins.civjtz97t02yc2tpbvjf98wy7-72tgh'
+});
+```
 
 # Mapbox libraries
 * [Turf.js](http://turfjs.org/) - geospatial (location data) analysis
