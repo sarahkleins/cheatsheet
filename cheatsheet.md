@@ -217,6 +217,9 @@ bundle install
 * `ogr2ogr -t_srs EPSG:4326 -f geoJSON -lco COORDINATE_PRECISION=7 new_geojson_file.geojson shapefile.shp`
 * [ogr2ogr docs] (http://www.gdal.org/ogr2ogr.html)
 *  CSV to Map Points: `csv2geojson --lat latitude --lon longitude yext_points.csv | tippecanoe -o yext_v5.mbtiles -B3` ...large CSV tile to vector tile set (upload to Studio)
+* http://gis.stackexchange.com/questions/127518/convert-csv-to-kml-or-geojson-etc-using-ogr2ogr-or-equivalent-command-line-tool - WORKS - large dataset from csv to geojson
+* `tippecanoe -o yext3.mbtiles -B10 yext-utf8.geojson` smallest B10 makes the tiles under 500KB
+
 
 ```javascript
 map.addSource('metro-lines', {
