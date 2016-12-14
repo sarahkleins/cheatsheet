@@ -218,7 +218,8 @@ bundle install
 * [ogr2ogr docs] (http://www.gdal.org/ogr2ogr.html)
 *  CSV to Map Points: `csv2geojson --lat latitude --lon longitude yext_points.csv | tippecanoe -o yext_v5.mbtiles -B3` ...large CSV tile to vector tile set (upload to Studio)
 * http://gis.stackexchange.com/questions/127518/convert-csv-to-kml-or-geojson-etc-using-ogr2ogr-or-equivalent-command-line-tool - WORKS - large dataset from csv to geojson
-* `tippecanoe -o yext3.mbtiles -B10 yext-utf8.geojson` smallest B10 makes the tiles under 500KB
+* `tippecanoe -o [mbtiles_file].mbtiles -r1.5 -B12 [geojson_file].geojson`
+* See how-to for csv-to-geojson-to-tileset
 
 
 ```javascript
