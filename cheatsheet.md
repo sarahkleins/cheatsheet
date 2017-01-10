@@ -135,6 +135,9 @@ function removeTransition(){
 const keys = document.querySelectorAll('.key');
 keys.forEach(key => key.addEventListener('transitionend', removeTransition))
 ```
+`.bind(this)` 
+- Can bind arguments to a function without invoking it, ex. `getData('GET', url, compileConversations.bind(this, cb)`
+- First argument can be `this` (object it is referring to, function is acting on), `cb` would be first argument 
 
 # ES6
 `const` - constant
