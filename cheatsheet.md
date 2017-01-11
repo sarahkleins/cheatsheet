@@ -139,6 +139,17 @@ keys.forEach(key => key.addEventListener('transitionend', removeTransition))
 - Can bind arguments to a function without invoking it, ex. `getData('GET', url, compileConversations.bind(this, cb)`
 - First argument can be `this` (object it is referring to, function is acting on), `cb` would be first argument 
 
+`.addEventListener(eventType, function, useCapture )`
+- `useCapture`	Optional. A Boolean value that specifies whether the event should be executed in the capturing or in the bubbling phase. 
+
+Possible values:
+- `true` - The event handler is executed in the capturing phase
+- `false` - Default. The event handler is executed in the bubbling phase
+
+- `Capturing phase` - Events first are captured down to deepest target, then bubble up. In IE9 they only bubble. 1-2-3.
+- `Bubbling phase` - Events first are captured down to deepest target, then bubble up. In IE9 they only bubble. 3-2-1.
+- `Event bubbling` - DOM elements can be nested inside each other. And somehow, the handler of the parent works even if you click on it’s child. The reason is event bubbling.
+
 # ES6
 `const` - constant
 `${evaluate}` - ES6 template strings
