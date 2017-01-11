@@ -146,9 +146,10 @@ Possible values:
 - `true` - The event handler is executed in the capturing phase
 - `false` - Default. The event handler is executed in the bubbling phase
 
-- `Capturing phase` - Events first are captured down to deepest target, then bubble up. In IE9 they only bubble. 1-2-3.
-- `Bubbling phase` - Events first are captured down to deepest target, then bubble up. In IE9 they only bubble. 3-2-1.
 - `Event bubbling` - DOM elements can be nested inside each other. And somehow, the handler of the parent works even if you click on it’s child. The reason is event bubbling.
+
+- `Capturing phase` Events first are captured down to deepest target, then bubble up. In IE9 they only bubble. 1-2-3.
+- `Bubbling phase` Events first are captured down to deepest target, then bubble up. In IE9 they only bubble. 3-2-1.
 
 # ES6
 `const` - constant
