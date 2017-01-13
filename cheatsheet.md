@@ -158,7 +158,10 @@ function addEventListeners(list, event, func) {
      list[i].addEventListener(event, func, false);
   }
 }
-`addEventListenerCategories(category_filters, 'click', filterByCategory);`
+```
+```javascript
+addEventListenerCategories(category_filters, 'click', filterByCategory);
+```
 
 
 # ES6
