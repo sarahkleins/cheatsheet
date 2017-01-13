@@ -151,13 +151,14 @@ Possible values:
 - `Capturing phase` Events first are captured down to deepest target, then bubble up. In IE9 they only bubble. 1-2-3.
 - `Bubbling phase` Events first are captured down to deepest target, then bubble up. In IE9 they only bubble. 3-2-1.
 
-```
+### Adding Event Listeners
+```javascript
 function addEventListeners(list, event, func) {
   for (var i = 0, len = list.length; i < len; i++) {
      list[i].addEventListener(event, func, false);
   }
 }
-```
+`addEventListenerCategories(category_filters, 'click', filterByCategory);`
 
 
 # ES6
