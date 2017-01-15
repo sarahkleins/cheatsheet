@@ -162,6 +162,11 @@ function addEventListeners(list, event, func) {
 ```javascript
 addEventListenerCategories(category_filters, 'click', filterByCategory);
 ```
+### event.target
+`event.target` - A reference to the object that dispatched the event
+`this` - Always refers to the DOM element the listener was attached to
+`event.target` - Is the actual DOM element that was clicked
+Log `this`, `event`, and `event.target` to see the differences
 
 
 # ES6
