@@ -168,6 +168,11 @@ addEventListenerCategories(category_filters, 'click', filterByCategory);
 `event.target` - Is the actual DOM element that was clicked
 Log `this`, `event`, and `event.target` to see the differences
 
+### Add eventListener to multiple elements
+```
+You want to use querySelectorAll and then loop over the resulting node list (or you want to bind your event handler to 
+#menu-wrap (parent-div) itself and then use event.target to determine which list item was clicked on).
+```
 
 # ES6
 `const` - constant
