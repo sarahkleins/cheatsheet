@@ -295,3 +295,8 @@ Upgrade Node: `brew upgrade node`
 
 # oh-my-zsh
 `source ~/.zshrc`
+
+# To remember
+`git pull`
+`make new branch`
+`git push origin tooltip-examples`
