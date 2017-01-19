@@ -292,3 +292,6 @@ Upgrade Node: `brew upgrade node`
 # ESLint
 * `npm test` to run
 * `npm run fix` to run fixes
+
+# oh-my-zsh
+`source ~/.zshrc`
