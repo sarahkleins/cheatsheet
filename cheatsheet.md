@@ -176,6 +176,9 @@ Log `this`, `event`, and `event.target` to see the differences
 `const` - constant
 `${evaluate}` - ES6 template strings
 
+# Callbacjs
+- We can pass a function as an argument in another function and later execute that passed-in function or even return it to be executed later. This is the essence of using callback functions
+
 # jQuery
 * toggleClass
 ```javascript
