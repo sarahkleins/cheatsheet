@@ -176,10 +176,11 @@ Log `this`, `event`, and `event.target` to see the differences
 `const` - constant
 `${evaluate}` - ES6 template strings
 
-# Callbacks
+# Callbacks - Javascriptissexy
 * We can pass a function as an argument in another function and later execute that passed-in function or even return it to be executed later. This is the essence of using callback functions
 * When we pass a callback function as an argument to another function, we are only passing the function definition (We aren’t passing the function with the trailing pair of executing parenthesis () like we do when we are executing a function)
 * The callback is executed at some point inside the containing function’s body just as if the callback were defined in the containing function.
+* As we know, closures have access to the containing function’s scope, so the callback function can access the containing functions’ variables, and even the variables from the global scope.
 
 
 
